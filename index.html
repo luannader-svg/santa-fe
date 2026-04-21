@@ -170,14 +170,20 @@ h2 {
 <script>
 const totalFotos = 39;
 
+const gallery = document.getElementById("gallery");
+
 for (let i = 1; i <= totalFotos; i++) {
 
     const img = document.createElement("img");
 
-    img.src = `foto${i}.jpg`;
+    img.src = "./foto" + i + ".jpg";
 
     img.onerror = function () {
-        this.src = foto${i}.JPG;
+        this.src = "./foto" + i + ".JPG";
+    };
+
+    img.onload = function () {
+        console.log("Carregou:", this.src);
     };
 
     img.onclick = function () {
@@ -190,7 +196,7 @@ for (let i = 1; i <= totalFotos; i++) {
 
     img.loading = "lazy";
 
-    document.getElementById("gallery").appendChild(img);
+    gallery.appendChild(img);
 }
 
 document.getElementById("lightbox").onclick = function () {
