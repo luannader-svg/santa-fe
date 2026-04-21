@@ -176,7 +176,7 @@ const totalFotos = 500;
 
 for (let i = 1; i <= totalFotos; i++) {
     const img = document.createElement("img");
-    img.src = foto${i}.jpg;
+    img.src = `foto${i}.jpg`;
 
     img.onclick = function () {
         const lightbox = document.getElementById("lightbox");
