@@ -242,9 +242,9 @@ for (let i = 1; i <= totalFotos; i++) {
     img.src = "./foto" + i + ".jpg";
 
     img.onerror = function () {
-        this.src = "./foto" + i + ".JPG";
-    };
-
+    this.remove();
+};
+   
     img.onload = function () {
         console.log("Carregou:", this.src);
     };
