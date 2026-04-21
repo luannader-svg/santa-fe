@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depósito Santa Fé</title>
+
+<style>
+body{margin:0;font-family:'Segoe UI',sans-serif;background:#f5f5f5;color:#333}
+header{background:#111;color:#fff;padding:40px 20px;text-align:center}
+header h1{margin:0;font-size:42px;letter-spacing:2px}
+header p{margin-top:10px;font-size:18px;color:#ccc}
+nav{background:#222;padding:10px;text-align:center}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+nav a:hover{color:#c9a46c}
+.section{padding:60px 20px;max-width:1200px;margin:auto}
+h2{text-align:center;margin-bottom:40px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:8px;transition:.3s;background:#ddd}
+.gallery img:hover{transform:scale(1.05)}
+.footer{background:#111;color:#ccc;text-align:center;padding:30px}
+.btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#c9a46c;color:#fff;text-decoration:none;border-radius:5px}
+
+/* BOTÃO WHATSAPP FIXO */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:18px;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:1000;
+}
+.whatsapp:hover{background:#1ebe5d}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Depósito Santa Fé</h1>
+<p>Antiguidades selecionadas em Uberaba - MG</p>
+</header>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#pecas">Peças</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre" class="section">
+<h2>Sobre Nós</h2>
+<p style="text-align:center;max-width:700px;margin:auto">
+O Depósito Santa Fé é um antiquário em Uberaba especializado em peças únicas, selecionadas com cuidado para quem valoriza história, elegância e autenticidade.
+</p>
+</section>
+
+<section id="pecas" class="section">
+<h2>Peças Disponíveis</h2>
+<div class="gallery" id="gallery"></div>
+</section>
+
+<section id="contato" class="section">
+<h2>Contato</h2>
+<p style="text-align:center">
+Uberaba - MG<br><br>
+WhatsApp: (34) 99994-6199<br><br>
+Instagram: @depositosantafe
+</p>
+<div style="text-align:center">
+<a class="btn" href="https://wa.me/5534999946199" target="_blank">Fale Conosco no WhatsApp</a>
+</div>
+</section>
+
+<div class="footer">
+© 2026 Depósito Santa Fé
+</div>
+
+<!-- BOTÃO FLUTUANTE -->
+<a class="whatsapp" href="https://wa.me/5534999946199" target="_blank">
+WhatsApp
+</a>
+
+<script>
+const totalFotos=500;
+for(let i=1;i<=totalFotos;i++){
+const img=document.createElement("img");
+img.src=`foto${i}.jpg.JPG`;
+img.loading="lazy";
+img.onerror=function(){this.style.display="none"};
+document.getElementById("gallery").appendChild(img);
+}
+</script>
+
+</body>
+</html>
