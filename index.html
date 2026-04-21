@@ -89,7 +89,7 @@ WhatsApp
 const totalFotos=500;
 for(let i=1;i<=totalFotos;i++){
 const img=document.createElement("img");
-img.src=`foto${i}.jpg.JPG`;
+img.src=`foto${i}.jpg`;
 img.loading="lazy";
 img.onerror=function(){this.style.display="none"};
 document.getElementById("gallery").appendChild(img);
