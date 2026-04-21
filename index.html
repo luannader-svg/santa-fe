@@ -171,12 +171,17 @@ h2 {
 </div>
 
 <script>
-
 const totalFotos = 500;
 
 for (let i = 1; i <= totalFotos; i++) {
+
     const img = document.createElement("img");
-    img.src = `foto${i}.jpg`;
+
+    img.src = foto${i}.jpg;
+
+    img.onerror = function () {
+        this.src = foto${i}.JPG;
+    };
 
     img.onclick = function () {
         const lightbox = document.getElementById("lightbox");
@@ -188,18 +193,12 @@ for (let i = 1; i <= totalFotos; i++) {
 
     img.loading = "lazy";
 
-    img.onerror = function () {
-        this.style.display = "none";
-    };
-
     document.getElementById("gallery").appendChild(img);
 }
 
-// fechar lightbox
 document.getElementById("lightbox").onclick = function () {
     this.style.display = "none";
 };
-
 </script>
 
 </body>
