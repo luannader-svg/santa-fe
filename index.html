@@ -6,94 +6,200 @@
 <title>Depósito Santa Fé</title>
 
 <style>
-body{margin:0;font-family:'Segoe UI',sans-serif;background:#f5f5f5;color:#333}
-header{background:#111;color:#fff;padding:40px 20px;text-align:center}
-header h1{margin:0;font-size:42px;letter-spacing:2px}
-header p{margin-top:10px;font-size:18px;color:#ccc}
-nav{background:#222;padding:10px;text-align:center}
-nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
-nav a:hover{color:#c9a46c}
-.section{padding:60px 20px;max-width:1200px;margin:auto}
-h2{text-align:center;margin-bottom:40px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.gallery img{width:100%;height:250px;object-fit:cover;border-radius:8px;transition:.3s;background:#ddd}
-.gallery img:hover{transform:scale(1.05)}
-.footer{background:#111;color:#ccc;text-align:center;padding:30px}
-.btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#c9a46c;color:#fff;text-decoration:none;border-radius:5px}
 
-/* BOTÃO WHATSAPP FIXO */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-font-size:18px;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:1000;
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ea;
+    color: #2c2c2c;
 }
-.whatsapp:hover{background:#1ebe5d}
+
+header {
+    background: #1a1a1a;
+    color: #d4af37;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c9a46c;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #c9a46c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 30px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Depósito Santa Fé</h1>
-<p>Antiguidades selecionadas em Uberaba - MG</p>
+    <h1>Depósito Santa Fé</h1>
+    <p>Antiguidades selecionadas em Uberaba - MG</p>
 </header>
 
 <nav>
-<a href="#sobre">Sobre</a>
-<a href="#pecas">Peças</a>
-<a href="#contato">Contato</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#pecas">Peças</a>
+    <a href="#contato">Contato</a>
 </nav>
 
 <section id="sobre" class="section">
-<h2>Sobre Nós</h2>
-<p style="text-align:center;max-width:700px;margin:auto">
-O Depósito Santa Fé é um antiquário em Uberaba especializado em peças únicas, selecionadas com cuidado para quem valoriza história, elegância e autenticidade.
-</p>
+    <h2>Sobre Nós</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        O Depósito Santa Fé é um antiquário em Uberaba especializado em peças únicas,
+        selecionadas com cuidado para quem valoriza história, elegância e autenticidade.
+    </p>
 </section>
 
 <section id="pecas" class="section">
-<h2>Peças Disponíveis</h2>
-<div class="gallery" id="gallery"></div>
+    <h2>Peças Disponíveis</h2>
+    <div class="gallery" id="gallery"></div>
 </section>
 
 <section id="contato" class="section">
-<h2>Contato</h2>
-<p style="text-align:center">
-Uberaba - MG<br><br>
-WhatsApp: (34) 99994-6199<br><br>
-Instagram: @depositosantafe
-</p>
-<div style="text-align:center">
-<a class="btn" href="https://wa.me/5534999946199" target="_blank">Fale Conosco no WhatsApp</a>
-</div>
+    <h2>Contato</h2>
+    <p style="text-align:center;">
+        Uberaba - MG <br><br>
+        WhatsApp: (34) 99994-6199 <br><br>
+        Instagram: @depositosantafe
+    </p>
+
+    <div style="text-align:center;">
+        <a class="btn" href="https://wa.me/5534999946199" target="_blank">
+            Fale Conosco no WhatsApp
+        </a>
+    </div>
 </section>
 
 <div class="footer">
-© 2026 Depósito Santa Fé
+    © 2026 Depósito Santa Fé
 </div>
 
-<!-- BOTÃO FLUTUANTE -->
 <a class="whatsapp" href="https://wa.me/5534999946199" target="_blank">
-WhatsApp
+    💬
 </a>
 
+<!-- LIGHTBOX -->
+<div id="lightbox" style="
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+">
+    <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+
 <script>
-const totalFotos=500;
-for(let i=1;i<=totalFotos;i++){
-const img=document.createElement("img");
-img.src=`foto${i}.jpg`;
-img.loading="lazy";
-img.onerror=function(){this.style.display="none"};
-document.getElementById("gallery").appendChild(img);
+
+const totalFotos = 500;
+
+for (let i = 1; i <= totalFotos; i++) {
+    const img = document.createElement("img");
+    img.src = foto${i}.jpg;
+
+    img.onclick = function () {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        lightbox.style.display = "flex";
+        lightboxImg.src = this.src;
+    };
+
+    img.loading = "lazy";
+
+    img.onerror = function () {
+        this.style.display = "none";
+    };
+
+    document.getElementById("gallery").appendChild(img);
 }
+
+// fechar lightbox
+document.getElementById("lightbox").onclick = function () {
+    this.style.display = "none";
+};
+
 </script>
 
 </body>
